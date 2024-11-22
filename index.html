@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <header>
+    <button id="btnCadastro">Cadastre-se</button>
+  </header>
+
+  <body>
+    <dialog id="dialogCadastro">
+      <form id="formCadastro" action="segunda.html" method="post">
+        <h1>Nome</h1>
+        <input
+          id="inputNome"
+          type="text"
+          placeholder="Digite seu nome"
+          required
+        />
+
+        <h1>Endereço</h1>
+        <input
+          id="inputEndereco"
+          type="text"
+          placeholder="Digite seu endereço"
+          required
+        />
+
+        <h1>CEP</h1>
+        <input
+          id="cep"
+          type="text"
+          placeholder="Digite seu CEP"
+          oninput="mascaraCep(this)"
+          required
+        />
+
+        <h1>CPF</h1>
+        <input
+          id="cpf"
+          type="text"
+          maxlength="10"
+          placeholder="Digite seu CPF"
+          oninput="mascaraCpf(this)"
+          required
+        />
+
+        <h1>Telefone</h1>
+        <input
+          id="telefone"
+          type="tel"
+          placeholder="Digite seu telefone"
+          oninput="mascaraTelefone(this)"
+          required
+        />
+
+        <h1>CNPJ</h1>
+        <input
+          id="cnpj"
+          type="text"
+          placeholder="Digite seu CNPJ"
+          oninput="mascaraCnpj(this)"
+          required
+        />
+
+        <h1>Código</h1>
+        <input
+          id="codigo"
+          type="text"
+          placeholder="Digite seu código"
+          oninput="mascaraCodigo(this)"
+          required
+        />
+
+        <input id="enviar" type="submit" />
+      </form>
+      <script src="script.js"></script>
+    </dialog>
+  </body>
+</html>
